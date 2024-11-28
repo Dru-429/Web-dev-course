@@ -1,0 +1,17 @@
+{
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "description": "This is a music web app clone ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "music",
+    "at",
+    "spotify"
+  ],
+  "author": "Dru429",
+  "license": "ISC"
+}

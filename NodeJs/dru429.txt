@@ -1,0 +1,3 @@
+Dru is greate frontend developer and now doing backend  
+This is i want to append in the file
+This is a append line using await fn
