@@ -1,0 +1,14 @@
+{
+  "name": "video89",
+  "version": "1.0.0",
+  "description": "video88-response_request_router",
+  "main": "\t",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
