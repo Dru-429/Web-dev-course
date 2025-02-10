@@ -1,5 +1,6 @@
 import express from "express"
 import { PORT } from "./config/env.js"
+import connectTODatabse from "./databse/mongodb.js"
 
 import userRouter from "./Routes/user.routes.js"
 import authRouter from "./Routes/Auth.routes.js"
@@ -15,8 +16,10 @@ app.get('/', (req, res) => {
   res.send('Welcome to Subcription Tracker API!')
 })
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Server runnig on http://localhost:${PORT}`)
+
+  await connectTODatabse()
 })
 
 export default app 
