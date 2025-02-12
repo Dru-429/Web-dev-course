@@ -6,7 +6,7 @@ subscriptionRouter.get('/', (req, res) => {
     res.send({
         title: "GET all the subscription"
     })
-})
+}) 
 
 subscriptionRouter.get('/:id', (req, res) => {
     res.send({
