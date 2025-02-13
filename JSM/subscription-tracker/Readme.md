@@ -10,4 +10,9 @@
 9. Create Controller '
         Controller it is a special funtion thats runs of hitting a endpoint like 
         /api/v1/auth/signup -> on going this we will run the controller signUp exproted from the auth.controller.js 
-10. 
+10. Let's build auth then for this install bcrypt and jsonwebtoken (npm install jsonwebtoken bcryptjs )
+11. then create new dev env veriable that is #JWT AUTH JWT_SECRET = "secret" and JWT_EXPIRES_IN = "1d" and exprot it through config 
+12. create controller folder -> then create auth.controller.js -> then export const signUP, signIn, signOut
+13. then import them into Auth.route.js and place them 
+14. then start creating this controllers auth fn 
+15. 
