@@ -7,3 +7,5 @@ let myName: string = "Bob"  //TS
 
 let numberOfWheels: number = 4
 let isStudent: boolean = false
+
+
