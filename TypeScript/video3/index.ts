@@ -34,3 +34,53 @@ let person2: Person = {
     // isstudent: false
     isStudent: false
 }
+
+//video 8: Nested object type 
+
+// type PersonWithAddress = {
+//     name: string
+//     age: number
+//     isStudent: boolean
+//     address: {
+//         street: string
+//         city: string
+//         country: string
+//     }
+// }
+
+// or
+
+type Address = {
+    street: string,
+    city: string,
+    country: string
+}
+
+type PersonWithAddress = {
+    name: string
+    age: number
+    isStudent: boolean
+    address: Address
+}
+
+let person3: PersonWithAddress = {
+    name: "Joe",
+    age: 42,
+    isStudent: true,
+    address: {
+        street: "123 Main",
+        city: "Anytown",
+        country: "USA"
+    }
+}
+
+let person4: PersonWithAddress = {
+    name: "Jill",
+    age: 66,
+    isStudent: false,
+    address: {
+        street: "123 Main",
+        city: "Anytown",
+        country: "USA"
+    }
+}
