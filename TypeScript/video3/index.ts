@@ -9,7 +9,7 @@ let numberOfWheels: number = 4
 let isStudent: boolean = false
 
 
-// video 6 : custom types
+// video 7 : custom types
 
 type Food = string
 
@@ -35,7 +35,7 @@ let person2: Person = {
     isStudent: false
 }
 
-//video 8: Nested object type 
+//video 9: Nested object type 
 
 // type PersonWithAddress = {
 //     name: string
@@ -84,3 +84,24 @@ let person4: PersonWithAddress = {
         country: "USA"
     }
 }
+
+//video 10: Optional properties 
+
+type OptionalAddress = {
+    name: string
+    age: number
+    isStudent: boolean
+    address?: Address
+}
+
+let person6: OptionalAddress = {
+    name: "Joe",
+    age: 42,
+    isStudent: true,
+}
+
+function displayInfo(person){
+    console.log( `${person.name} lives at ${person.address?.country}` )
+}
+
+displayInfo(person6)
