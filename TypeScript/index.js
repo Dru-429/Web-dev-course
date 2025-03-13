@@ -53,3 +53,17 @@ completeOrder("1")
 console.log("Menu:", menu)
 console.log("Cash in register:", cashInRegister)
 console.log("Order queue:", orderQueue)
+
+
+// Output
+// cashInRegister += selectedPizza.price
+//                 ^
+// TypeError: Assignment to constant variable.
+//     at placeOrder (c:\Users\RANIYA SAHOO\OneDrive\Desktop\Web Dev\TypeScript\index.js:18:20)
+//     at Object.<anonymous> (c:\Users\RANIYA SAHOO\OneDrive\Desktop\Web Dev\TypeScript\index.js:50:1)
+//     at Module._compile (node:internal/modules/cjs/loader:1358:14)
+//     at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+//     at Module.load (node:internal/modules/cjs/loader:1208:32)
+//     at Module._load (node:internal/modules/cjs/loader:1024:12)
+//     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+//     at node:internal/main/run_main_module:28:49
