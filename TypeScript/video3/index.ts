@@ -171,3 +171,6 @@ function fetchUserDetails(username: string): User {
     }
     return user
 }
+
+//also when a fn dont return anything type void to it as that other dev knows 
+
