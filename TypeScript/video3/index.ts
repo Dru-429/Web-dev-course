@@ -125,3 +125,22 @@ let myName2: "Bob" = "Bob"
 let myName4 = "Dru"  //let myName4: string
 // let myName: "Bob" = "Bob" is same as how const store the type of a string 
 const myName3 = "Bobby" //const myName3: "Bobby"
+
+//video 15 : unions
+// union can be only fixed types of string 
+
+type User = {
+    username: string
+    role: "guest" | "member" | "admin"
+}
+
+type UserRole = "guest" | "member" | "admin"
+
+type Psswd = number | string 
+
+let numPassword: Psswd = 429
+let alphaPassword: Psswd = "Dru429"
+
+let userRole: UserRole = "admin"
+
+// let userRole: UserRole = "sdfkjhsdkfjh"
