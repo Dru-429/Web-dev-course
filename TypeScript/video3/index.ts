@@ -119,3 +119,9 @@ let ages: number[] = [100, 101]
 let people: Person[] = [person1, person2] 
 //or
 let peopleSyntax2: Array<Person> = [person1, person2]
+
+//video 14 : Literal type 
+let myName2: "Bob" = "Bob"
+let myName4 = "Dru"  //let myName4: string
+// let myName: "Bob" = "Bob" is same as how const store the type of a string 
+const myName3 = "Bobby" //const myName3: "Bobby"
