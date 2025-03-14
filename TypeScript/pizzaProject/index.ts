@@ -47,7 +47,7 @@ function completeOrder(orderId: number) {
     return order;
 }
 
-function getPizzaDetail(identifier: string | number) {
+export function getPizzaDetail(identifier: string | number) {
     if ( typeof(identifier) === "string") {
         return menu.find(pizza => pizza.name.toLowerCase() === identifier.toLowerCase() )
     }   
