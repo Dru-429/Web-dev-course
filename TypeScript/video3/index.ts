@@ -144,3 +144,30 @@ let alphaPassword: Psswd = "Dru429"
 let userRole: UserRole = "admin"
 
 // let userRole: UserRole = "sdfkjhsdkfjh"
+
+//video 21 : Definig function return type and also beign explicite
+
+const users: User[] = [
+    { username: "john_doe", role: "member" },
+    { username: "jane_doe", role: "admin" },
+    { username: "guest_user", role: "guest" }
+];
+
+// function fetchUserDetails(username: string)  {  //function fetchUserDetails(username: string): User
+//     const user = users.find(user => user.username === username)
+//     if (!user) {
+//         throw new Error(`User with username ${username} not found`)
+//     }
+//     return user
+// }
+
+// in the above case ts-put the type itself of the fn to user as it returns a object of type user , but if in the future some one change it to string output it will accept it ,.. it dont show the purpose of why 
+// so We should always define the function type so that other developer know the purpose and if change act accordingly
+
+function fetchUserDetails(username: string): User {
+    const user = users.find(user => user.username === username)
+    if (!user) {
+        throw new Error(`User with username ${username} not found`)
+    }
+    return user
+}
