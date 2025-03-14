@@ -25,7 +25,7 @@ function addNewPizza(pizzaObj: Pizza): void {
     menu.push(pizzaObj);
 }
 
-function placeOrder(pizzaName: string) : Order | undefined {
+function placeOrder(pizzaName: string): Order | undefined {
     const selectedPizza = menu.find((pizzaObj) => pizzaObj.name === pizzaName);
     if (!selectedPizza) {
         console.error(`${pizzaName} does not exist in the menu`);
@@ -47,12 +47,13 @@ function completeOrder(orderId: number): Order | undefined {
     return order;
 }
 
-export function getPizzaDetail(identifier: string | number) : Pizza | undefined {
-    if ( typeof(identifier) === "string") {
-        return menu.find(pizza => pizza.name.toLowerCase() === identifier.toLowerCase() )
-    }   
-    else{
+export function getPizzaDetail(identifier: string | number): Pizza | undefined {
+    if (typeof identifier === "string") {
+        return menu.find(pizza => pizza.name.toLowerCase() === identifier.toLowerCase())
+    } else if (typeof identifier === "number") {
         return menu.find(pizza => pizza.id === identifier)
+    } else {
+        throw new TypeError("Parameter `identifier` must be either a string or a number")
     }
 }
 
