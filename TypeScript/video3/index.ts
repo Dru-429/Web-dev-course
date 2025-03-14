@@ -105,3 +105,17 @@ function displayInfo(person){
 }
 
 displayInfo(person6)
+
+//video -12: Typing Arrays
+
+// let ages: number = [100, 101]  Type 'number[]' is not assignable to type 'number'.
+
+let ages: number[] = [100, 101]
+// or 
+// let age = [100,101]
+
+// ages.push(true) Argument of type 'boolean' is not assignable to parameter of type 'number'.
+
+let people: Person[] = [person1, person2] 
+//or
+let peopleSyntax2: Array<Person> = [person1, person2]
