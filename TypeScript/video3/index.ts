@@ -174,3 +174,10 @@ function fetchUserDetails(username: string): User {
 
 //also when a fn dont return anything type void to it as that other dev knows 
 
+let a : any = 1
+console.log(a.toUpperCase)
+
+//When should I use any?
+
+// In short: DON'T 😉
+// One legitimate use-case: you're in the process of transitioning a code base from JavaScript to TypeScript and don't immediately have the time to write all your complex types, so you just need a way to "get around TypeScript" for now.
