@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import React from 'react'
 
 const ChaiPage = () => {
@@ -9,8 +10,12 @@ const ChaiPage = () => {
         </div>
 
         <button className='py-2 px-4 bg-blue-400 hover:bg-blue-700 rounded-2xl'>
-            Test button 
+             button 
         </button>
+
+        <Button>
+            Shad CN Button
+        </Button>
     </main>
   )
 }
