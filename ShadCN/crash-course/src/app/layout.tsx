@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/context/theme-provider";
+import { ModeToggle } from "@/components/ui/ModeToggel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <nav className="h-[10%] flex px-14 w-[100%] bg-zinc-900 text-zinc-100 text-2xl justify-between items-center rounded-b-xl py-5 ">
+             <h1>Shad CN Crash-course</h1>
+             <ModeToggle />
+          </nav>
           {children}
         </ThemeProvider>
       </body>
