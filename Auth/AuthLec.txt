@@ -1,3 +1,14 @@
+TOPICS COVERED: 
+    Auth vs AuthZ
+    Session vs Token
+    Cookies vs LocalStorage
+    JWT
+    Signature-based verification
+    Token expiry
+    CSRF
+    CORS
+    Rate limiting
+    JWT vs Session in NextAuth
 
 
 Lesson 1 : Authentication vs Authorization (with Real-life Analogy)
