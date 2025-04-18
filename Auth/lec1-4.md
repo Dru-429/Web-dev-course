@@ -123,7 +123,6 @@ A cookie is a small piece of data that the server asks the browser to store. The
 Manual storage in the browser. Data stored in `localStorage` is **not** automatically sent with HTTP requests. 📤
 
 **Example:**
-```javascript
 localStorage.setItem('token', 'xyz');
 
 ## 🔑 Lesson 4: JWT (JSON Web Token) Explained 🧩
