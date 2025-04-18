@@ -1,0 +1,72 @@
+### Authentication
+
+### 🔰 **Core Authentication Concepts**
+
+- [x]  What is Authentication vs Authorization?
+- [x]  Sessions vs Tokens
+- [x]  HTTP Cookies vs Local Storage
+- [x]  JWT (JSON Web Tokens)
+- [ ]  ⏳ OAuth2 Basics
+- [ ]  ⏳ Refresh Tokens & Access Tokens
+- [x]  Token Expiry & Rotation
+- [x]  CSRF & XSS attacks
+- [x]  CORS in Authentication
+- [x]  Rate Limiting & Brute Force Protection
+
+### 🧪 **MERN Stack Authentication Topics**
+
+### ✅ Backend (Node.js + Express)
+
+- [ ]  ⏳ Setting up Express Auth APIs
+- [ ]  ⏳ Password Hashing with bcrypt
+- [ ]  ⏳ User Registration & Login Routes
+- [ ]  ⏳ JWT-based Auth (Access & Refresh Tokens)
+- [ ]  ⏳ Storing Tokens in HTTP-only Cookies
+- [ ]  ⏳ Role-based Access Control (RBAC)
+- [ ]  ⏳ Middleware for Protected Routes
+- [ ]  ⏳ Token Blacklisting / Invalidating Tokens
+- [ ]  ⏳ Session-based Auth
+    
+          (express-session + MongoDB store)
+    
+
+### ✅ Frontend (React)
+
+- [ ]  ⏳ Login/Register Forms with API Integration
+- [ ]  ⏳ Storing & Handling JWT (Cookie vs LocalStorage)
+- [ ]  ⏳ Protected Routes in React (React Router)
+- [ ]  ⏳ Using Context API for Auth State
+- [ ]  ⏳ Token Refresh Logic in React
+- [ ]  ⏳ Logout Logic
+- [ ]  ⏳ Error Handling (401, 403)
+
+ Database (MongoDB)
+
+- [ ]  ⏳ User Schema with Password Hashing
+- [ ]  ⏳ Tokens Schema (if storing refresh tokens)
+- [ ]  ⏳ Storing Sessions (if using session-based auth)n
+
+### 🔐 **Advanced Authentication Topics**
+
+- [ ]  ⏳ Email Verification
+- [ ]  ⏳ Forgot Password / Reset via Email
+- [ ]  ⏳ Two-Factor Authentication (2FA)
+- [ ]  ⏳ Phone OTP Authentication
+- [ ]  ⏳ Social Logins (Google, GitHub, Facebook)
+- [ ]  ⏳ Magic Links Authentication
+- [ ]  ⏳ Device/Location-based Login Alerts
+
+### 🚀 **NextAuth.js (Next.js Authentication Framework)**
+
+- [ ]  ✅ Provider Setup (Credentials, Google, GitHub, etc.)
+- [ ]  ✅ JWT vs Session in NextAuth.js
+- [ ]  ⏳ Custom Sign In/Sign Up Pages
+- [ ]  ⏳ Callbacks (for custom logic during login)
+- [ ]  ⏳ Database Adapter Setup (MongoDB, Prisma)
+- [ ]  ⏳ Role-based Auth in NextAuth
+- [ ]  ⏳ Secure API Routes with NextAuth Session
+- [ ]  ⏳ Server-side Auth with getServerSession()
+- [ ]  ⏳ Refresh Token Rotation with OAuth Providers
+- [ ]  ⏳ Deploying NextAuth on Vercel/Firebase/Render
+
+---
