@@ -79,3 +79,28 @@ Manual storage in browser, Not sent with HTTP requests
 eg: 
 localStorage.setItem('token', 'xyz');
 Problem: If someone injects a script (<script>stealToken()</script>) → they can read it. That’s XSS. 
+
+
+Lesson 4: JWT (JSON Web Token)
+
+When a client sents a request to the server side this happens :
+
+Split the JWT into three parts --> which are seperated with the . 
+--> pt 1: HEADER it tells how to encode and what algo to use to do so 
+--> pt 2: PAYLOAD it contains all the actual data of the user, it can be read by any one ,  This is NOT encrypted, just encoded — anyone can read it!
+--> pt 3: SIGNATURE it ensure it waasn't modify How .... it says that nobody without the security can't change it 
+
+It Steps : 
+    Splits the JWT into 3 parts (header.payload.signature)
+    Recalculates the signature using the secret key
+    Checks if it matches the one sent
+    If valid ✅ → reads the payload, gets user info
+    If invalid ❌ → rejects the request
+
+eg: 
+    import jwt from "jsonwebtoken";
+    const token = req.headers.authorization.split(" ")[1];
+    const userData = jwt.verify(token, process.env.JWT_SECRET);
+    console.log(userData); // { sub: 'userId123', name: 'Dru', role: 'admin' }
+
+jwt.verify() fn is used 
