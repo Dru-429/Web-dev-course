@@ -3,7 +3,7 @@
 Lesson 1 : 
     
 Authentication : Prove Who you are
- 
+
 1. It means to prove who are we like showing id card at the enterance gate. 
 
 2. In code form client side we send 
@@ -19,4 +19,11 @@ Authentication : Prove Who you are
                 "role": "admin" 
             },
         }
-    
+
+Authorization : What yor are allowed to do
+
+1. Here we check the role of the user and what he is allowed to do so 
+2. in code      
+    if (user.role === 'admin') {
+  // allow deleting a user
+}
