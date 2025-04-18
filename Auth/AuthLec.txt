@@ -47,3 +47,18 @@ Cookies are used to maintain state in HTTP (which is otherwise stateless).
 
 Http only : it prevent js  from reading or modifying the cookies. , so console.log(document.cookie); // ❌ Will NOT show HttpOnly cookies 
 so it prevent xss atack 
+
+JWT( json Web Token )
+1. Token based Authentication 
+2. So no server db storage needed 
+3.  User login --> Sever sends 
+    {
+    "accessToken": "eyJhbGci... (contains user ID, role)"
+    } 
+    --> Client side stores token in memory or cookie --> AN devery request includes Authorization bearer userid --> Server decodes the token, verifies the signature, and extracts the user info
+4. Like Session Id we also send JWT Tokens with every req to the server to retrive user data 
+
+🤔 But Won’t This Be Slow?
+    Nope — JWTs are just Base64-encoded strings:
+    No DB lookup is needed (unless you're blacklisting tokens or checking refresh tokens)
+    Decoding and verifying the token is fast (microseconds).
