@@ -1,7 +1,7 @@
 
 
-Lesson 1 : 
-    
+Lesson 1 : Authentication vs Authorization (with Real-life Analogy)
+
 Authentication : Prove Who you are
 
 1. It means to prove who are we like showing id card at the enterance gate. 
@@ -27,3 +27,23 @@ Authorization : What yor are allowed to do
     if (user.role === 'admin') {
   // allow deleting a user
 }
+
+
+Lesson 2 : Session vs Token-Based Authentication
+
+SESSION BASED Authentication
+1. It stored in the DB and a session ID is generated and that is what forwaded to client side stored in the cookies. 
+
+2. Steps :
+User login --> Server created a recode --> generates a session recode { sessionId: "abc123", userId: "dru" } --> then send a cookies to client side --> Set-Cookie: sessionId=abc123; HttpOnly --> On server side every time any req is made server find the user using the session id --> cuzz of that it create a pipeline b/w all the user working simuntanuosly 
+
+3. Pros: Server Controlled, Safer, Battle-tested 
+
+4. Cons: DB is must, harder to scale in microservices
+
+COOKIES :: 
+A cookie is a small piece of data that the server asks the browser to store, and the browser automatically sends it back with every future request to that server — unless restricted by flags.
+Cookies are used to maintain state in HTTP (which is otherwise stateless).
+
+Http only : it prevent js  from reading or modifying the cookies. , so console.log(document.cookie); // ❌ Will NOT show HttpOnly cookies 
+so it prevent xss atack 
