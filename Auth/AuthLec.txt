@@ -1,0 +1,22 @@
+
+
+Lesson 1 : 
+    
+Authentication : Prove Who you are
+ 
+1. It means to prove who are we like showing id card at the enterance gate. 
+
+2. In code form client side we send 
+        {
+            "email": "adbc",
+            "password": "1234",
+        }
+    and then we check the credential using middelware and if correct backend response with :
+        {
+           "accessToken": "xyz.abc.123",
+            "user": {
+                "name": "Dru",
+                "role": "admin" 
+            },
+        }
+    
