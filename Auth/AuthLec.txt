@@ -41,10 +41,6 @@ User login --> Server created a recode --> generates a session recode { sessionI
 
 4. Cons: DB is must, harder to scale in microservices
 
-COOKIES :: 
-A cookie is a small piece of data that the server asks the browser to store, and the browser automatically sends it back with every future request to that server — unless restricted by flags.
-Cookies are used to maintain state in HTTP (which is otherwise stateless).
-
 Http only : it prevent js  from reading or modifying the cookies. , so console.log(document.cookie); // ❌ Will NOT show HttpOnly cookies 
 so it prevent xss atack 
 
@@ -62,3 +58,24 @@ JWT( json Web Token )
     Nope — JWTs are just Base64-encoded strings:
     No DB lookup is needed (unless you're blacklisting tokens or checking refresh tokens)
     Decoding and verifying the token is fast (microseconds).
+
+
+
+Lesson 3: HTTP Cookies vs LocalStorage
+
+COOKIES :: 
+A cookie is a small piece of data that the server asks the browser to store, and the browser automatically sends it back with every future request to that server — unless restricted by flags.
+Cookies are used to maintain state in HTTP (which is otherwise stateless).
+
+eg: Set-Cookie: sessionId=abc123; HttpOnly; Secure
+
+Cookies Flags : those are the things that is return at set cookie
+->HttpOnly: JS cannot access it → protects from XSS
+->Secure: only sent on HTTPS
+->SameSite: prevent CSRF
+
+LOCAL STORAGE:
+Manual storage in browser, Not sent with HTTP requests
+eg: 
+localStorage.setItem('token', 'xyz');
+Problem: If someone injects a script (<script>stealToken()</script>) → they can read it. That’s XSS. 
