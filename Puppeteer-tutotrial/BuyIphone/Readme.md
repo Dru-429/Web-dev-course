@@ -83,3 +83,8 @@ Built by Dru429 using Node.js + Puppeteer.
 ---
 
 Connect to me : 
+a href="https://linkedin.com/in/dhruvsahoo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dhruvsahoo" height="30" width="40" /></a>
+
+**contact.dhruvsahoo@gmail.com** 
+
+**GITHUB: https://github.com/Dru-429**
