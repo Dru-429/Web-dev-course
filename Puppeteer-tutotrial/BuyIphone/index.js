@@ -30,15 +30,18 @@ async function run() {
   const page = await givePage();
   await page.goto(url);
   await add_to_cart(page);
+  await shipping(page)
 }
 
 async function add_to_cart(page) {
-  await clickBtn(page, "input[data-autom='dimensionScreensize6_1inch']");
-  await clickBtn(page, "input[value='black']");
-  await clickBtn(page, "input[data-autom='dimensionCapacity256gb']");
+  await clickBtn(page, "input[data-autom='dimensionScreensize6_1inch'], 2000");
+  await clickBtn(page, "input[value='black']", 1500);
+  await clickBtn(page, "input[data-autom='dimensionCapacity256gb']", 2000);
 
   await clickBtn(page, "[id='noTradeIn']", 1500);
   await clickBtn(page, "[id='applecareplus_58_noapplecare']", 1500);
+  await clickBtn(page, "button[data-autom='add-to-cart']", 5000);
+
 }
 
 async function shipping(page) {
@@ -63,10 +66,10 @@ async function shipping(page) {
   await input.type("110017");
 
   await page.type("input[name='emailAddress']", "sahoo.dru@gmail.com");
-  await new Promise((r) => setTimeout(r, 1000));
+  await new Promise((r) => setTimeout(r, 1500));
 
-  await page.type("input[name='mobilePhone']", "700000002");
-  await new Promise((r) => setTimeout(r, 1000));
+  await page.type("input[name='mobilePhone']", "1234567890");
+  await new Promise((r) => setTimeout(r, 2000));
 
   await page.click("#rs-checkout-continue-button-bottom");
 }
