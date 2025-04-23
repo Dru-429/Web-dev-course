@@ -52,20 +52,20 @@ async function shipping(page) {
   selector =
     "input[id='checkout.shipping.addressSelector.newAddress.address.firstName']";
   await page.waitForSelector(selector);
-  await page.type(selector, "Ritesh");
+  await page.type(selector, "Dru");
 
-  await page.type("input[name='lastName']", "Verma");
+  await page.type("input[name='lastName']", "Sahoo");
   await page.type("input[name='street']", "8204 Baltimore Avenue");
 
   // Zip code handling
   const input = await page.$("input[name='postalCode']");
   await input.click({ clickCount: 3 });
-  await input.type("20740");
+  await input.type("110017");
 
-  await page.type("input[name='emailAddress']", "rvbusiness1m@gmail.com");
+  await page.type("input[name='emailAddress']", "sahoo.dru@gmail.com");
   await new Promise((r) => setTimeout(r, 1000));
 
-  await page.type("input[name='fullDaytimePhone']", "4437655722");
+  await page.type("input[name='mobilePhone']", "700000002");
   await new Promise((r) => setTimeout(r, 1000));
 
   await page.click("#rs-checkout-continue-button-bottom");
