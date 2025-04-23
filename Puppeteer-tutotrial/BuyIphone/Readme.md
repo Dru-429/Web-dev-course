@@ -1,8 +1,3 @@
-Here’s a **README.md** you can include with your iPhone auto-checkout Puppeteer bot project:
-
----
-
-```markdown
 # 🛒 iPhone 16 Auto-Checkout Bot
 
 This Node.js-based automation bot uses Puppeteer to **automatically add an iPhone 16 Black 256GB variant** (without AppleCare) to the cart and proceed to the **payment page**. It simulates user actions like selection, form-filling, and clicking buttons.
