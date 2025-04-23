@@ -47,7 +47,7 @@ npm start
 ---
 
 ## 📝 What it Does Step-by-Step:
-## 📝 Bot Flow
+📝 Bot Flow
 
 1. Navigate to the Apple product page
 2. Select **6.3-inch screen** model
