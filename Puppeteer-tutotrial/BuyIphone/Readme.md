@@ -47,15 +47,22 @@ npm start
 ---
 
 ## 📝 What it Does Step-by-Step:
-1. Opens the Apple store product page
-2. Waits for and clicks on:
-   - Black color option
-   - 256GB storage
-   - No trade-in
-   - No AppleCare
-3. Fills in shipping information
-4. Enters email and phone number
-5. Clicks the checkout button and redirects to the payment page
+## 📝 Bot Flow
+
+1. Navigate to the Apple product page
+2. Select **6.3-inch screen** model
+3. Select **Black** color
+4. Select **256GB** storage
+5. Select **No Trade-In**
+6. Select **No AppleCare**
+7. Enter:
+   - First Name: `Dru`
+   - Last Name: `Sahoo`
+   - Street Address: `8204 Baltimore Avenue`
+   - Pin Code: `10017`
+   - Email: `sahoo.dru@gmail.com`
+   - Phone: `1234567890`
+8. Click **Continue to Payment**
 
 ---
 
